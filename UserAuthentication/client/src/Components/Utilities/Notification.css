@@ -1,0 +1,19 @@
+.errorMsg {
+  height: 35px;
+  padding: 5px;
+  background: rgb(214, 10, 10);
+  color: #fff9;
+  text-align: center;
+  padding: 10px, 0;
+  letter-spacing: 1.3px;
+}
+
+.successMsg {
+  height: 35px;
+  padding: 5px;
+  background: rgb(0, 145, 7);
+  color: #fff9;
+  text-align: center;
+  padding: 10px, 0;
+  letter-spacing: 1.3px;
+}

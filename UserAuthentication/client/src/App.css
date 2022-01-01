@@ -1,0 +1,22 @@
+.App {
+  margin: 0 auto;
+  max-width: 95vw;
+  width: 100%;
+  min-height: 100vh;
+  box-shadow: 0 0 20px rgb(8, 8, 8);
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

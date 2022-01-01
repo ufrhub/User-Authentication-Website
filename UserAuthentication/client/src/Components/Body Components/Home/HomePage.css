@@ -1,0 +1,100 @@
+.HomePage {
+  min-height: calc(100vh - 100px);
+  padding: 20px;
+  background: rgb(112, 112, 112);
+  color: #333;
+}
+
+.HomePage h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 10px 0;
+  color: black;
+}
+
+.HomePage h2 {
+  font-size: 2rem;
+  margin: 10px 0;
+  color: rgb(19, 21, 134);
+}
+
+.HomePage div {
+  position: relative;
+  max-height: 800px;
+  min-height: 700px;
+  width: 100%;
+  box-shadow: 0 3px 6px 0 #333;
+}
+
+.HomePage p {
+  font-size: 1.3rem;
+  color: white;
+  line-height: 1.5;
+  margin: 10px 0;
+  font-style: italic;
+}
+
+.HomePage div .p {
+  text-align: center;
+}
+
+.HomePage img {
+  position: absolute;
+  max-width: 80%;
+  top: 10%;
+  left: 10%;
+  border-radius: 3px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.9);
+}
+
+.HomePage img:empty {
+  top: 64%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.HomePage .link {
+  color: white;
+  background: black;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 3px;
+  margin: 10px 0;
+  letter-spacing: 1.2px;
+}
+
+.HomePage .see-code {
+  color: rgb(78, 42, 42);
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+/* MEDIA SCREEN */
+
+@media screen and (orientation: portrait) {
+  .HomePage img {
+    max-width: 100%;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .HomePage img {
+    max-height: 70%;
+  }
+}
+
+@media (max-width: 430px) {
+  .HomePage div .p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .HomePage div .p {
+    font-size: 1.1rem;
+  }
+}

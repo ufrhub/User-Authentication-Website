@@ -1,0 +1,149 @@
+.UserProfileBody {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* LEFT SIDE */
+
+.UserProfileBody .col-left {
+  max-width: 400px;
+  min-width: 300px;
+  padding: 0 10px;
+  margin: auto;
+}
+
+.UserProfileBody .col-left .Avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  margin: 15px auto;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.UserProfileBody .col-left img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.UserProfileBody .col-left .Avatar span {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: #fff8;
+  text-align: center;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: black;
+}
+
+.UserProfileBody .col-left .Avatar:hover span {
+  bottom: -10%;
+}
+
+.UserProfileBody .col-left #ProfilePicture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.UserProfileBody .col-left h2 {
+  text-align: center;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  color: forestgreen;
+}
+
+.UserProfileBody .col-left label {
+  display: block;
+  margin-top: 5px;
+}
+
+.UserProfileBody .col-left input {
+  width: 100%;
+  height: 40px;
+  margin: 5px 0;
+  border: none;
+  outline: none;
+  background: rgb(173, 253, 173);
+  padding: 0 5px;
+}
+
+.UserProfileBody .col-left button {
+  background: forestgreen;
+  color: white;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin: 10px 0;
+}
+
+/* RIGHT SIDE */
+
+.UserProfileBody .col-right {
+  padding: 0 10px;
+  flex: 1;
+  min-width: 300px;
+  max-width: 1000px;
+}
+
+.UserProfileBody .col-right h2 {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  color: forestgreen;
+  margin: 10px 0;
+}
+
+/* TABLE */
+
+.Users th,
+.Users td {
+  border: 1px solid black;
+  padding: 10px;
+  min-width: 100px;
+}
+
+.Users tr:nth-child(even) {
+  background: rgb(173, 253, 173);
+}
+
+.Users th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background: forestgreen;
+  color: white;
+}
+
+.Users i {
+  cursor: pointer;
+}
+
+.Users .fa-toggle-on {
+  color: green;
+  font-size: 20px;
+  margin-left: 35%;
+}
+
+.Users .fa-toggle-off {
+  color: red;
+  font-size: 20px;
+  margin-left: 35%;
+}
+
+.Users .fa-trash {
+  color: red;
+  font-size: 20px;
+  margin-left: 35%;
+}
